@@ -1,0 +1,198 @@
+html,
+body {
+    font-family: Arial, sans-serif;
+    background-color: #525661;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    color:#555;
+}
+
+#container {
+    position: relative;
+    margin:0;
+    min-height:100%;
+}
+
+
+header {
+    padding: 12px 15%;
+    background-color: #359f83;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    position:relative;
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    border-top: 4px solid #359f83;
+    background-color: #6e7484;
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.15);
+    margin-top:-94px;
+}
+
+#section-container {
+    overflow: hidden;
+    position: relative;
+}
+
+section {
+    margin: 40px 20% 134px 20%;
+    width: auto;
+    padding: 20px;
+    background-color: #d7ec8d;
+    border-radius: 4px;
+    position: relative;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+}
+
+h1 {
+    color: #d7ec8d;
+}
+
+h2 {
+    color: #73d47d;
+}
+
+h3 {
+	color: #359f83;
+    /* color: #68c171; */
+	margin-bottom:0;
+	margin-top: 1.286em;
+}
+
+h4 {
+	margin-top: 0.857em;
+	margin-bottom:0.714em;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    border-bottom: 2px solid #68c171;
+    text-shadow: -2px 2px 0 #73d47d;
+    font-size:2.714em;
+}
+
+header h2 {
+    margin-top: 0;
+}
+
+section h2 {
+color: #37bb73;
+}
+
+p {
+    color: #2c2e33;
+    font-size: 0.857em;
+    line-height: 1.429em;
+}
+
+footer p {
+    font-size: 0.714em;
+    color: #2e3138;
+    padding: 20px 15%;
+}
+
+hr {
+	background: none;
+	border-top:1px dashed #bad45e;
+	border-bottom: 0 none;
+	margin:20px 0;
+}
+
+.container-half {
+	width:50%;
+	float: left;
+}
+
+.char {
+	font-size: 2em;
+	line-height:2em;
+	display:inline-block;
+	font-weight:800;
+}
+
+.btn {
+	cursor: pointer;
+	text-align:center;
+	display:inline-block;
+	border-radius: 3px;
+	padding: 10px 20px;
+	font-weight:600;
+	font-family: Arial, sans-serif;
+	font-size: 1em;
+	border-radius: 3px;
+}
+
+.btn-default {
+	background-color:#03b1d6;
+	color:#dff;
+	float:right;
+	border: 1px solid #0f92ad;
+}
+
+.btn-cta {
+	background-color: #f57004;
+	color: #fffdbc;
+	float:right;
+	margin-top: -3.071em;
+	border: 1px solid #c56212;
+}
+
+.clear {
+	clear: both;
+	height:0;
+}
+
+a:link{
+	color:#0070ff;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+/* ================== FORM ELEMENTS ====================== */
+input, select, option {
+	padding:3px;
+	color: #444;
+	margin-bottom:1em;
+}
+
+/* ====================== MODAL ============================= */
+
+/* This gets applied to #container */
+.greyout {
+    z-index: 1000;
+    background-color: #444;
+    opacity: 0.5;
+}
+
+#modal {
+    position: fixed;
+    top: 20%;
+    right: auto;
+    left: 15%;
+    z-index: 1050;
+    overflow: hidden;
+    outline: 0;
+    width: 70%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 0;
+    box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.75);
+}
+
+.modal-inner {
+	padding:10px 20px 20px 20px;
+}
+
+#modal img {
+	max-height: 300px;
+	max-width:100%;
+}
+
+#match-name {
+	text-align: center;
+}
