@@ -8,12 +8,9 @@ var friends = [{
     photo: 'https://i.ytimg.com/vi/cqX-tOVWCxs/hqdefault.jpg',
     scores: ['1', '5', '5', '4', '3', '4', '4', '3', '2', '5']
 }, {
-    name: 'Paul Allen',
-    photo: 'https://i.ytimg.com/vi/cqX-tOVWCxs/hqdefault.jpg',
-    scores: ['1', '5', '5', '4', '3', '4', '4', '3', '2', '5']
-}, {
     name: 'Ellen Ripley',
     photo: 'http://bh-s2.azureedge.net/bh-uploads/2016/04/ALIEN-001.png',
+    scores: ['2', '5', '3', '0', '4', '3', '3', '3', '5', '1']
 }, {
     name: 'Max Rockatansky',
     photo: 'http://static.tvtropes.org/pmwiki/pub/images/max_the_road_warrior.jpg',

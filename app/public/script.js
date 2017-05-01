@@ -1,5 +1,6 @@
 // FRONT END STUFF
 $(document).ready(function() {
+
     $("#modal").hide();
     $("#survey-questions").hide();
     $("#error").hide();
