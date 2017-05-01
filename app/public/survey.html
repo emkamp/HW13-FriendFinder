@@ -1,7 +1,8 @@
 <head>
     <title>Find a Friend!</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/script.js"></script>
 </head>
 
 <body>
@@ -11,12 +12,31 @@
             <h2>Find your next friend!</h2>
         </header>
         <div id="section-container">
-            <section>
-                <h2>Survey Questions</h2>
-                <hr>
-                <h3>Question 1</h3>
-                <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-                <select id="q1">
+            <form>
+                <section id="survey-intro">
+                    <h2>To begin, please give us your name and picture.</h2>
+                    <hr />
+                    <div class="container-half">
+                        <h4>Name (Required)</h4>
+                        <input type="text" name="user-name" id="name" class="form-control" required="">
+                    </div>
+                    <div class="container-half">
+                        <h4>Link to Photo Image (Required)</h4>
+                        <p>Don't hotlink to a host that doesn't want you to. Use a free image host like <a href="http://www.imgur.com" alt="Imgur">Imgur</a>.</p>
+                        <input type="text" name="user-pic" id="photo" class="form-control" required="">
+                    </div>
+                    <div class="clear">&nbsp;</div>
+                    <hr />
+                    <a class="btn btn-default" id="btn-survey-begin">Start Survey</a>
+                    <div class="clear">&nbsp;</div>
+                </section>
+
+                <section id="survey-questions">
+                    <h2>Survey Questions</h2>
+                    <hr>
+                    <h3>Question 1</h3>
+                    <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+                    <select id="q1">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -24,9 +44,9 @@
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
-                <h3>Question 2</h3>
-                <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
-                <select id="q2">
+                    <h3>Question 2</h3>
+                    <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+                    <select id="q2">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -34,9 +54,9 @@
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
-                <h3>Question 3</h3>
-                <h4>You think that pineapple is a respectable pizza topping.</h4>
-                <select id="q3">
+                    <h3>Question 3</h3>
+                    <h4>You think that pineapple is a respectable pizza topping.</h4>
+                    <select id="q3">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -44,9 +64,9 @@
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
-                <h3>Question 4</h3>
-                <h4>You rarely do something just out of sheer curiosity.</h4>
-                <select id="q4">
+                    <h3>Question 4</h3>
+                    <h4>You rarely do something just out of sheer curiosity.</h4>
+                    <select id="q4">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -54,9 +74,9 @@
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
-                <h3>Question 5</h3>
-                <h4>You love to travel and are interested in exploring new places.</h4>
-                <select id="q5">
+                    <h3>Question 5</h3>
+                    <h4>You love to travel and are interested in exploring new places.</h4>
+                    <select id="q5">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -64,9 +84,9 @@
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
-                <h3>Question 6</h3>
-                <h4>It is often difficult for you to relate to other people's feelings.</h4>
-                <select id="q6">
+                    <h3>Question 6</h3>
+                    <h4>It is often difficult for you to relate to other people's feelings.</h4>
+                    <select id="q6">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -74,9 +94,9 @@
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
-                <h3>Question 7</h3>
-                <h4>In a discussion, truth should be more important than people's sensitivities.</h4>
-                <select id="q7">
+                    <h3>Question 7</h3>
+                    <h4>In a discussion, truth should be more important than people's sensitivities.</h4>
+                    <select id="q7">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -84,9 +104,9 @@
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
-                <h3>Question 8</h3>
-                <h4>You rarely get carried away by fantasies and ideas.</h4>
-                <select id="q8">
+                    <h3>Question 8</h3>
+                    <h4>You rarely get carried away by fantasies and ideas.</h4>
+                    <select id="q8">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -94,9 +114,9 @@
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
-                <h3>Question 9</h3>
-                <h4>You think that everyone's views should be respected regardless of whether they are supported by facts or not.</h4>
-                <select id="q9">
+                    <h3>Question 9</h3>
+                    <h4>You think that everyone's views should be respected regardless of whether they are supported by facts or not.</h4>
+                    <select id="q9">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -104,9 +124,9 @@
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
-                <h3>Question 10</h3>
-                <h4>You feel more energetic after spending time with a group of people.</h4>
-                <select id="q10">
+                    <h3>Question 10</h3>
+                    <h4>You feel more energetic after spending time with a group of people.</h4>
+                    <select id="q10">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -114,11 +134,12 @@
                     <option value="4">4</option>
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
-                <hr>
-                <!-- Submit Button -->
-                <button type="submit" class="btn btn-default" id="submit">Submit</button>
-                <div class="clear">&nbsp;</div>
-            </section>
+                    <hr />
+                    <button type="submit" class="btn btn-default" id="submit">Submit</button>
+                    <div class="clear">&nbsp;</div>
+                </section>
+            </form>
+            <div id="error"></div>
         </div>
     </div>
     <div id="modal">
@@ -126,10 +147,10 @@
             <h2>Your closest match</h2>
             <hr />
             <div class="container-half">
-                <h3 id="match-name">It's <span id="match-name">Steve Brule</span>!</h3>
+                <h3>It's <span id="match-name"></span>!</h3>
             </div>
             <div class="container-half">
-                <img src="https://simkl.net/fanart/70/70404a76907b577_0.jpg" alt="your match's picture" />
+                <img id="match-pic" src="" alt="your match's picture" />
             </div>
             <div class="clear">&nbsp;</div>
             <hr />
@@ -140,8 +161,6 @@
     <footer>
         <p>Made by Emily P</p>
     </footer>
-        <script type="text/javascript" src="../data/friends.js"></script>
-
 </body>
 
 </html>
