@@ -20,6 +20,7 @@ module.exports = function(app) {
             pic: "",
             matchScore: 100
         };
+        console.log(userData);
 
         // compare to existing user data
         var scoreDiff = 0;
